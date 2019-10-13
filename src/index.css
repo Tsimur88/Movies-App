@@ -1,0 +1,21 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+    background-image: url(./img/background.jpg);
+}
+
+.app-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "h h"
+    "c c";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 5fr;
+
+}
+.header {
+    grid-area: h;
+}
+.content {
+    grid-area: c;
+}
