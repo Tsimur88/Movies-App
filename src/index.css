@@ -2,6 +2,7 @@
     margin: auto;
     box-sizing: border-box;
     background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
 }
 
 .app-wrapper {

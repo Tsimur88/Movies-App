@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
-import React, { useState } from "react";
+
 
 function Form() {
   const [value, setValue] = useState('');
@@ -9,9 +9,15 @@ function Form() {
       <form>
         <input value={value} onChange={(e) => setValue(e)} />
       </form>
-      <Button variant="light" onClick={<Search value={value}/>}>Search</Button>
+      <Button variant="light" onClick={<Search value={value} />}>Search</Button>
     </>
   );
 }
 
 export default Form;
+
+// onChange = async (value) => {
+//   this.setState({ loading: true });
+//   const items = await fetch(....);
+//   this.setState({ loading: false, films: items });
+// }
