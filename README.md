@@ -1,7 +1,7 @@
 Movies App
-
+		
 Languages & Tools :
-
+		
 HTML
 JavaScript (including ES6 features)
 React Library
