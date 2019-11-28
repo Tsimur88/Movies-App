@@ -2,15 +2,15 @@
 		
 ## Languages & Tools : ##
 		
-HTML		
+* HTML		
 
-JavaScript (including ES6 features)		
+* JavaScript (including ES6 features)		
 
-React Library		
+* React Library		
 
-Materialize CSS Framework		
+* Materialize CSS Framework		
 
-Webpack 4		
+* Webpack 4		
 
-Babel		
+* Babel		
 
