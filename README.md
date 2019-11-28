@@ -4,6 +4,8 @@
 		
 * HTML		
 
+* CSS  
+
 * JavaScript (including ES6 features)		
 
 * React Library		
