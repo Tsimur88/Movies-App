@@ -1,2 +1,11 @@
-# Movie-App
-Movie App with using Webpack 4 and React library. 
+Movies App
+
+Languages & Tools :
+
+HTML
+JavaScript (including ES6 features)
+React Library
+Materialize CSS Framework
+Webpack 4
+Babel
+
