@@ -4,3 +4,17 @@
     /* background-image: url(./img/background.jpg); */
     background-repeat: no-repeat;
 }
+form {
+    margin-top: 10%;
+}
+.btn {
+    margin-left: 74%;
+}
+.number {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+span, i {
+    margin: 0;
+}
