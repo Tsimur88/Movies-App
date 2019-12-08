@@ -6,7 +6,7 @@ const MovieList = (props) => {
   return (
 <div className="container">
       <div className="number">
-        <i class="material-icons">local_movies</i>
+        <i className="material-icons">local_movies</i>
         <span>
           {props.movies.length} movies found
         </span>

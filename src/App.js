@@ -11,15 +11,15 @@ class App extends Component {
     this.state = {
       movies: [],
       searchTerm: '',
+      searchBy: ''
     };
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
 
-
-    fetch(`https://reactjs-cdp.herokuapp.com/movies?search=${this.state.searchTerm}&searchBy=title`)
+    console.log(this.State)
+    fetch(`https://reactjs-cdp.herokuapp.com/movies?search=${this.state.searchTerm}&searchBy=${this.state.searchBy}`)
       .then((data) => data.json())
       .then((data) => {
         this.setState({ movies: [...data.data] });
@@ -27,15 +27,18 @@ class App extends Component {
   }
 
   handleChange = (e) => {
-    console.log(e);
     this.setState({ searchTerm: e.target.value });
+  }
+
+  setSearchBy = (value) => {
+    this.setState({searchBy: value});
   }
 
   render() {
     return (
       <div className="App">
         <Nav />
-        <SearchArea value={this.state.searchTerm} handleSubmit={this.handleSubmit} handleChange={this.handleChange} />
+        <SearchArea value={this.state.searchTerm} handleSubmit={this.handleSubmit} handleChange={this.handleChange} setSearchBy={this.setSearchBy} />
         <MovieList movies={this.state.movies} />
       </div>
     );
